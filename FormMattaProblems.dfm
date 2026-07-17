@@ -1,0 +1,137 @@
+object frmMattaProblems: TfrmMattaProblems
+  Left = 0
+  Top = 0
+  Caption = 'Generating Matta'#39's PMOSP Instances'
+  ClientHeight = 497
+  ClientWidth = 436
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 82
+    Top = 64
+    Width = 114
+    Height = 13
+    Caption = 'Number of workstations'
+  end
+  object Label2: TLabel
+    Left = 123
+    Top = 98
+    Width = 73
+    Height = 13
+    Caption = 'Number of jobs'
+  end
+  object Label3: TLabel
+    Left = 125
+    Top = 27
+    Width = 71
+    Height = 13
+    Caption = 'Instance name'
+  end
+  object cbxNoOfPCs: TComboBox
+    Left = 213
+    Top = 61
+    Width = 97
+    Height = 21
+    Style = csDropDownList
+    ItemIndex = 0
+    TabOrder = 0
+    Text = '2'
+    OnChange = cbxNoOfPCsChange
+    Items.Strings = (
+      '2'
+      '4'
+      '8'
+      '16')
+  end
+  object btnGenerate: TBitBtn
+    Left = 59
+    Top = 454
+    Width = 137
+    Height = 25
+    Caption = 'Generate Instance'
+    DoubleBuffered = True
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      0400000000000001000000000000000000001000000010000000000000000000
+      800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00555550FF0559
+      1950555FF75F7557F7F757000FF055591903557775F75557F77570FFFF055559
+      1933575FF57F5557F7FF0F00FF05555919337F775F7F5557F7F700550F055559
+      193577557F7F55F7577F07550F0555999995755575755F7FFF7F5570F0755011
+      11155557F755F777777555000755033305555577755F75F77F55555555503335
+      0555555FF5F75F757F5555005503335505555577FF75F7557F55505050333555
+      05555757F75F75557F5505000333555505557F777FF755557F55000000355557
+      07557777777F55557F5555000005555707555577777FF5557F55553000075557
+      0755557F7777FFF5755555335000005555555577577777555555}
+    NumGlyphs = 2
+    ParentDoubleBuffered = False
+    TabOrder = 1
+    OnClick = btnGenerateClick
+  end
+  object btnClose: TBitBtn
+    Left = 238
+    Top = 454
+    Width = 131
+    Height = 25
+    Caption = 'Close'
+    DoubleBuffered = True
+    Glyph.Data = {
+      DE010000424DDE01000000000000760000002800000024000000120000000100
+      0400000000006801000000000000000000001000000000000000000000000000
+      80000080000000808000800000008000800080800000C0C0C000808080000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00388888888877
+      F7F787F8888888888333333F00004444400888FFF444448888888888F333FF8F
+      000033334D5007FFF4333388888888883338888F0000333345D50FFFF4333333
+      338F888F3338F33F000033334D5D0FFFF43333333388788F3338F33F00003333
+      45D50FEFE4333333338F878F3338F33F000033334D5D0FFFF43333333388788F
+      3338F33F0000333345D50FEFE4333333338F878F3338F33F000033334D5D0FFF
+      F43333333388788F3338F33F0000333345D50FEFE4333333338F878F3338F33F
+      000033334D5D0EFEF43333333388788F3338F33F0000333345D50FEFE4333333
+      338F878F3338F33F000033334D5D0EFEF43333333388788F3338F33F00003333
+      4444444444333333338F8F8FFFF8F33F00003333333333333333333333888888
+      8888333F00003333330000003333333333333FFFFFF3333F00003333330AAAA0
+      333333333333888888F3333F00003333330000003333333333338FFFF8F3333F
+      0000}
+    ModalResult = 2
+    NumGlyphs = 2
+    ParentDoubleBuffered = False
+    TabOrder = 2
+  end
+  object grdDataTable: TStringGrid
+    Left = 30
+    Top = 136
+    Width = 377
+    Height = 305
+    ColCount = 3
+    RowCount = 3
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing]
+    TabOrder = 3
+    ColWidths = (
+      92
+      125
+      127)
+  end
+  object edtnJobs: TEdit
+    Left = 213
+    Top = 95
+    Width = 97
+    Height = 21
+    TabOrder = 4
+  end
+  object edtProblemName: TEdit
+    Left = 213
+    Top = 24
+    Width = 121
+    Height = 21
+    TabOrder = 5
+  end
+end

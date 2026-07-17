@@ -1,0 +1,41 @@
+/*********************************************
+ * OPL 12.8.0.0 Data
+ * Author: Tamer Abdelmaguid
+ * Input data from a specially developed application
+ * for the DMOSP problem.
+ * Problem name: C:\Work\DMOSP\Program\PaperExample-0.dat
+ *********************************************/
+
+ nj = 4;
+ nm = 7;
+ no = 12;
+
+ // Jobs data:
+	 p = [ 2.00, 4.00, 10.00, 6.00];
+	 r = [ 0.00, 0.00, 0.00, 0.00];
+
+ // Machines data:
+	MW = [ 1, 2, 2, 3, 3, 4, 5];
+	 a = [ 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00];
+
+ // Operations data:
+	OJ = [ 1, 1, 1, 2, 2, 3, 3, 3, 4, 4, 4, 4];
+	OW = [ 2, 3, 5, 2, 5, 1, 2, 3, 1, 2, 3, 4];
+
+ // Ordered processing times:
+	d = [
+		96.00, 91.00,
+		57.00, 60.00,
+		68.00,
+		84.00, 79.00,
+		85.00,
+		33.00,
+		104.00, 85.00,
+		73.00, 79.00,
+		44.00,
+		82.00, 76.00,
+		56.00, 61.00,
+		31.00
+	    ];
+
+ bigM = 10000.00;

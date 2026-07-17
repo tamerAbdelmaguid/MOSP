@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?><project>
+	<version>1.0</version>
+	<configs>
+		<config default="true" name="Configuration1" category="opl">
+			<ref name="DMOSP.mod" type="model">
+			</ref>
+			<ref name="DMOSP.ops" type="setting">
+			</ref>
+			<ref name="PaperExample.dat" type="data">
+			</ref>
+		</config>
+		<config default="false" name="BasedOnInputData" category="opl">
+			<ref name="DMOSP.mod" type="model">
+			</ref>
+			<ref name="DMOSP.ops" type="setting">
+			</ref>
+			<ref name="InputData.dat" type="data">
+			</ref>
+		</config>
+		<config default="false" name="Configuration2" category="opl">
+			<ref name="DMOSP.mod" type="model">
+			</ref>
+			<ref name="DMOSP.ops" type="setting">
+			</ref>
+			<ref name="ModifiedPaperExample.dat" type="data">
+			</ref>
+		</config>
+	</configs>
+	
+</project>

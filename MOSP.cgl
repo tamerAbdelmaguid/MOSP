@@ -1,0 +1,30 @@
+Error 00001. 0x820000 (Thread 0x0850):
+Function failure:
+_rtl_open(0x01F056BC ["E"], 0x0 [0])=0xFFFFFFFF [-1]
+
+| FileSystem.cpp line 308:
+| MOSP_Solution *LoadSolution(MOSP_Problem *Problem, char *fileName, MOSP_FIO_RESULT &Result)
+| {
+|>  int hfin = _rtl_open(fileName, O_RDONLY);
+|   if(hfin==-1){ Result = FAIL_TO_OPEN;   return NULL; }
+| 
+Call Tree:
+   0x00421FFD(=MOSP.exe:0x01:020FFD) FileSystem.cpp#308
+   0x00414F78(=MOSP.exe:0x01:013F78) FormSol.cpp#278
+   0x00423B16(=MOSP.exe:0x01:022B16) FormPSEditor.cpp#124
+   0x004F43F5(=MOSP.exe:0x01:0F33F5) Controls.pas#7178
+   0x004F4829(=MOSP.exe:0x01:0F3829) Controls.pas#7306
+   0x004F3AAB(=MOSP.exe:0x01:0F2AAB) Controls.pas#6840
+
+------------------------------------------
+Error 00002. 0x400000 (Thread 0x0850):
+Exception 0xC0000005: Access violation at 0x1E7D8CC.
+Call Tree:
+   0x0058E1D1(=MOSP.exe:0x01:18D1D1)
+   0x0058CD86(=MOSP.exe:0x01:18BD86)
+   0x0CD06852(=CG32.DLL:0x01:005852)
+   0x0CD151B8(=CG32.DLL:0x01:0141B8)
+   0x0CD1618A(=CG32.DLL:0x01:01518A)
+   0x0CD27AD6(=CG32.DLL:0x01:026AD6)
+
+------------------------------------------

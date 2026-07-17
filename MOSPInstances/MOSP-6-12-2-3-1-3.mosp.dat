@@ -1,0 +1,189 @@
+/*********************************************
+ * OPL 12.8.0.0 Data
+ * Author: Tamer Abdelmaguid
+ * Input data from a specially developed application
+ * for the DMOSP problem.
+ * Problem name: C:\Work\MOSP\Program\MOSPInstances\MOSP-6-12-2-3-1-3.mosp.dat
+ *********************************************/
+
+ nj = 12;
+ nm = 27;
+ no = 67;
+
+
+ // Machines data:
+	MW = [ 1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 6, 6, 6];
+
+ // Operations data:
+	OJ = [ 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9, 9, 9, 10, 10, 10, 10, 10, 10, 11, 11, 11, 11, 11, 11, 12, 12, 12, 12, 12, 12];
+	OW = [ 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 6, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 6, 1, 3, 4, 5, 6, 1, 2, 3, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6];
+
+ // Ordered processing times:
+	d = [
+		283.00, 264.00, 287.00, 275.00, 266.00,
+		86.00, 82.00, 84.00, 82.00,
+		236.00, 236.00, 244.00, 240.00,
+		135.00, 140.00, 131.00, 135.00, 129.00,
+		103.00, 105.00, 100.00, 104.00,
+		239.00, 239.00, 260.00, 243.00, 253.00,
+		286.00, 269.00, 282.00, 284.00, 270.00,
+		88.00, 81.00, 85.00, 87.00,
+		244.00, 232.00, 236.00, 245.00,
+		130.00, 130.00, 136.00, 136.00, 131.00,
+		237.00, 241.00, 246.00, 255.00, 249.00,
+		81.00, 82.00, 87.00, 84.00,
+		245.00, 235.00, 229.00, 227.00,
+		133.00, 140.00, 139.00, 129.00, 136.00,
+		98.00, 106.00, 105.00, 103.00,
+		255.00, 250.00, 257.00, 253.00, 237.00,
+		268.00, 274.00, 271.00, 277.00, 289.00,
+		84.00, 88.00, 88.00, 81.00,
+		239.00, 236.00, 231.00, 232.00,
+		133.00, 134.00, 134.00, 138.00, 132.00,
+		102.00, 102.00, 97.00, 104.00,
+		286.00, 288.00, 264.00, 286.00, 287.00,
+		82.00, 84.00, 82.00, 81.00,
+		248.00, 241.00, 228.00, 244.00,
+		136.00, 137.00, 130.00, 136.00, 137.00,
+		105.00, 102.00, 98.00, 106.00,
+		250.00, 246.00, 244.00, 252.00, 252.00,
+		271.00, 290.00, 276.00, 282.00, 284.00,
+		239.00, 244.00, 244.00, 245.00,
+		140.00, 139.00, 128.00, 136.00, 133.00,
+		100.00, 103.00, 101.00, 106.00,
+		254.00, 250.00, 258.00, 253.00, 250.00,
+		268.00, 277.00, 265.00, 267.00, 286.00,
+		80.00, 83.00, 86.00, 86.00,
+		231.00, 230.00, 235.00, 229.00,
+		103.00, 101.00, 96.00, 101.00,
+		238.00, 246.00, 255.00, 241.00, 256.00,
+		275.00, 282.00, 280.00, 285.00, 286.00,
+		84.00, 85.00, 82.00, 86.00,
+		245.00, 247.00, 249.00, 237.00,
+		128.00, 134.00, 139.00, 139.00, 140.00,
+		97.00, 97.00, 97.00, 106.00,
+		254.00, 242.00, 260.00, 243.00, 251.00,
+		279.00, 289.00, 287.00, 280.00, 270.00,
+		84.00, 81.00, 84.00, 83.00,
+		237.00, 241.00, 236.00, 240.00,
+		139.00, 129.00, 140.00, 139.00, 132.00,
+		106.00, 96.00, 105.00, 106.00,
+		243.00, 260.00, 255.00, 253.00, 242.00,
+		265.00, 276.00, 285.00, 274.00, 274.00,
+		85.00, 80.00, 87.00, 83.00,
+		242.00, 231.00, 226.00, 239.00,
+		132.00, 133.00, 128.00, 136.00, 128.00,
+		104.00, 100.00, 102.00, 104.00,
+		239.00, 253.00, 239.00, 253.00, 256.00,
+		269.00, 269.00, 287.00, 283.00, 269.00,
+		85.00, 83.00, 83.00, 82.00,
+		227.00, 229.00, 238.00, 226.00,
+		130.00, 136.00, 128.00, 130.00, 138.00,
+		105.00, 102.00, 98.00, 101.00,
+		249.00, 255.00, 252.00, 255.00, 255.00,
+		289.00, 266.00, 276.00, 282.00, 283.00,
+		84.00, 84.00, 83.00, 87.00,
+		240.00, 231.00, 247.00, 231.00,
+		130.00, 133.00, 130.00, 128.00, 140.00,
+		101.00, 102.00, 104.00, 104.00,
+		258.00, 237.00, 257.00, 255.00, 249.00
+	    ];
+
+ bigM = 100000.00;
+
+/********************************* MOD file *************************************
+ int nj = ...;         // number of jobs
+ range J = 1..nj;      // set of jobs
+
+ int nm = ...;         // total number of machines
+ range M = 1..nm;      // set of all machines in the shop
+ int MW[M] = ...;      // workstation # to which machine m belongs
+
+ int no = ...;         // total number of operations
+ range O = 1..no;      // set of all operations
+ int OJ[O] = ...;      // index of the job to which the operation belongs
+ int OW[O] = ...;      // index of the workstation to which the operation belongs
+
+ tuple TOpMc {
+   int o;    // operation index
+   int m;    // machine index
+ };
+ setof(TOpMc) Process = { <o, m> | o in O, m in M : OW[o] == MW[m] };
+ float d[Process] = ...;         // processing times of operations on machines
+
+ tuple TJOpPair {
+   int w;    // index of the first operation
+   int q;    // index of the second operation
+ };
+ setof(TJOpPair) DefX = { <w, q> | w, q in O : OJ[w] == OJ[q] && q > w};
+ dvar int x[DefX] in 0..1;
+
+ dvar int y[Process] in 0..1;
+
+ tuple TOpPairMc {
+   int j;   // index of the first operation
+   int k;   // index of the second operation
+   int m;   // machine index
+ };
+ setof(TOpPairMc) DefZ = { <j, k, m> | j, k in O, m in M : j != k && OW[j] == OW[k] && OW[j] == MW[m]};
+ dvar int z[DefZ] in 0..1;
+
+ dvar float+ s[O];
+ dvar float+ c[J];
+ dvar float Cmax;
+ float bigM = ...;
+
+ minimize Cmax;     // (1)
+
+ subject to {
+  Constraint1:
+   forall(j in J) Cmax >= c[j];           // (2)
+
+  Constraint2:
+   forall(j in J)
+     forall(o in O : OJ[o] == j)
+       c[j] >= s[o] + sum(m in M : OW[o] == MW[m]) d[<o, m>] * y[<o, m>];        // (3)
+
+  Constraint3:
+   forall(o in O)
+      sum(m in M : OW[o] == MW[m]) y[<o, m>] == 1;          // (4)
+
+  Constraint4:
+   forall(j in J)
+     forall(w in O : OJ[w] == j)
+       forall(r in O : OJ[r] == j && r > w)
+         s[r] - s[w] >= sum(m in M : OW[w] == MW[m]) d[<w, m>] * y[<w, m>]
+                        - bigM * (1 - x[<w, r>]);                                  // (5)
+
+  Constraint5:
+   forall(j in J)
+     forall(w in O : OJ[w] == j)
+       forall(r in O : OJ[r] == j && r > w)
+         s[w] - s[r] >= sum(m in M : OW[r] == MW[m]) d[<r, m>] * y[<r, m>]
+                        - bigM * x[<w, r>];                                        // (6)
+
+  Constraint6:
+   forall(j in O)
+     forall(k in O : j < k)
+       forall(m in M : OW[j] == MW[m] && OW[k] == MW[m])
+         z[<j, k, m>] + z[<k, j, m>] <= (y[<j, m>] + y[<k, m>]) / 2;              // (7)
+
+  Constraint9:
+   forall(j in O)
+     forall(k in O : j < k)
+       forall(m in M : OW[j] == MW[m] && OW[k] == MW[m])
+         z[<j, k, m>] + z[<k, j, m>] >= y[<j, m>] + y[<k, m>] - 1;                // (8)
+
+  Constraint10:
+   forall(j in O)
+     forall(k in O : j != k && OW[k] == OW[j])
+        s[k] - s[j] >= sum(m in M : OW[j] == MW[m]) d[<j, m>] * y[<j, m>]
+                       - bigM * (1 - sum(m in M : OW[j] == MW[m]) z[<j, k, m>]);  // (9)
+}
+ ************************************************************************************/
+
+/*main
+{
+ thisOplModel.generate();
+ cplex.exportModel("C:\Work\DMOSP\Program\CPLEX\lpmodel.lp");
+}/**/
