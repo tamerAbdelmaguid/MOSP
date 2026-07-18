@@ -1,7 +1,0 @@
-Metaheuristic approaches for multiprocessor open shop scheduling
-
-1) hybrid GA/TS approach in which the machine assignment part is coded in the GA
-   while the TS is used for local improvements.
-
-2) a TS approach in which changing machine assignments is included in the neighborhood
-   search function.
